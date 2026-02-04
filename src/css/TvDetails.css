@@ -1,0 +1,28 @@
+.tv-details-container {
+    width: 100%;
+    min-height: 100vh;
+    color: white;
+}
+
+.details-banner {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.details-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.7); /* Darkens the area behind text */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.details-poster img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(168, 217, 236);
+}
+.movie-details {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  display: inline-block;
+ 
+  align-items: center;
+  text-align: center;
+  background-color: #121212;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+.movie-details h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #f5c518;
+}
+
+/* Movie Poster */
+.movie-details img {
+  width: 280px;
+  max-width: 90%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+/* Overview */
+.movie-details p {
+  font-size: 1rem;
+  line-height: 1.6;  
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+/* Labels */
+.movie-details strong {
+  color: #ffffff;
+}
+
+/* Rating */
+.movie-details p:last-child {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #f5c518;
+}
+
+/* Loading & Error text */
+.movie-details-loading,
+.movie-details-error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .movie-details {
+    flex-direction: row;
+    text-align: left;
+    gap: 30px;
+  }
+
+  .movie-details img {
+    width: 320px;
+  }
+
+  .movie-details > div {
+    flex: 1;
+  }
+}

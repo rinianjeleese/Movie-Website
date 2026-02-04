@@ -1,0 +1,74 @@
+.home-container {
+  background-color: #101010;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Banner Styling */
+.banner {
+  height: 60vh;
+  display: flex; 
+  align-items: center; 
+  justify-content: flex-start; 
+  padding: 0 5%; 
+ 
+  background: linear-gradient(to right, rgba(16, 16, 16, 0.8) 30%, rgba(16, 16, 16, 0) 100%), 
+              url('https://via.placeholder.com/1500x600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner-content h1 {
+ max-width: 600px; 
+  z-index: 2;
+}
+
+/* Sections */
+.section-container {
+  padding: 2rem 5%;
+}
+
+/* .movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+} */
+
+
+.movies-grid {
+  display: flex;            
+  gap: 1.5rem;
+  overflow-x: auto;        
+  padding: 1rem 0;
+  scroll-behavior: smooth;  
+  -webkit-overflow-scrolling: touch; 
+}
+
+
+.movies-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.movies-grid::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+.movies-grid::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.movies-grid > * {
+  flex: 0 0 auto;           
+  width: 200px;             
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  border-left: 4px solid #e50914;
+  padding-left: 1rem;
+}
