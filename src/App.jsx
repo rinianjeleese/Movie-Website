@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import { MovieProvider } from "./contexts/MovieContext";
 import MovieDetails from "./components/MovieDetails";
 import TVShows from "./pages/TvShows";
-import TvDetails from "./components/TVDetails";
+import TvDetails from "./components/TvDetails";
 import Section from "./pages/Section";
 
 const App = () => {
